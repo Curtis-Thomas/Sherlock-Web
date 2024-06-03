@@ -21,7 +21,7 @@ function App() {
           pb: 2,
         }}
       >
-        <Typography variant="h1">Sherlock</Typography>
+        <Typography variant="h1">Sherlock Web</Typography>
       </Box>
       <Box>
         <Grid container spacing={2}>
