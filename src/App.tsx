@@ -3,7 +3,7 @@ import Device from "./UserInfo/Device";
 import OperatingSystem from "./UserInfo/Operatingsystem";
 import Network from "./UserInfo/Network";
 import BrowserCapabilities from "./UserInfo/BrowserCapabilities";
-import Referrer from "./UserInfo/Referrer";
+// import Referrer from "./UserInfo/Referrer";
 import Locale from "./UserInfo/Locale";
 import Hardware from "./UserInfo/Hardware";
 import Session from "./UserInfo/Session";
@@ -37,9 +37,9 @@ function App() {
           <Grid item xs={12} sm={6}>
             <BrowserCapabilities />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          {/* <Grid item xs={12} sm={6}>
             <Referrer />
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} sm={6}>
             <Locale />
           </Grid>
