@@ -24,12 +24,23 @@ function Referrer() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Referrer
       </Typography>
-      <Typography>Referrer URL: {referrerInfo.referrer}</Typography>
-      <Typography>Referrer Hostname: {referrerInfo.hostname}</Typography>
-      <Typography>Referrer Protocol: {referrerInfo.protocol}</Typography>
+      <Typography sx={{ pb: 1 }}>
+        Referrer URL: {referrerInfo.referrer}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        Referrer Hostname: {referrerInfo.hostname}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        Referrer Protocol: {referrerInfo.protocol}
+      </Typography>
     </Box>
   );
 }

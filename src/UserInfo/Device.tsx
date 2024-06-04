@@ -45,16 +45,23 @@ function Device() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Device
       </Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
         Screen Resolution: {device.screenWidth}x{device.screenHeight}
       </Typography>
-      <Typography>Color Depth: {device.colorDepth} bits</Typography>
-      <Typography>Pixel Ratio: {device.pixelRatio}x</Typography>
-      <Typography>Device Type: {device.deviceType}</Typography>
-      <Typography>Orientation: {device.orientation}</Typography>
+      <Typography sx={{ pb: 1 }}>
+        Color Depth: {device.colorDepth} bits
+      </Typography>
+      <Typography sx={{ pb: 1 }}>Pixel Ratio: {device.pixelRatio}x</Typography>
+      <Typography sx={{ pb: 1 }}>Device Type: {device.deviceType}</Typography>
+      <Typography sx={{ pb: 1 }}>Orientation: {device.orientation}</Typography>
     </Box>
   );
 }

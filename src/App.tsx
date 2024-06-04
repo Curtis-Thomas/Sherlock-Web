@@ -12,11 +12,12 @@ function App() {
   return (
     <Box
       sx={{
-        color: "white",
-        backgroundColor: "black",
+        color: "#ACFCD9",
+        backgroundColor: "#1B2021",
         minHeight: "100vh",
-        pl: { xs: 0, md: "30vw" },
-        pr: { xs: 0, md: "30vw" },
+        pl: { xs: "10vw", md: "30vw" },
+        pr: { xs: "10vw", md: "30vw" },
+        pb: 5,
       }}
     >
       <Box
@@ -29,7 +30,13 @@ function App() {
           pb: 2,
         }}
       >
-        <Typography variant="h1">Sherlock Web</Typography>
+        <Typography
+          variant="h1"
+          sx={{ fontSize: { xs: "3rem" } }}
+          color={"#75A4FF"}
+        >
+          Sherlock Web
+        </Typography>
       </Box>
       <Box sx={{ pb: 5 }}>
         <Box>
@@ -42,28 +49,28 @@ function App() {
       </Box>
       <Box>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Device />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <OperatingSystem />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Network />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <BrowserCapabilities />
           </Grid>
           {/* <Grid item xs={12} sm={6} >
             <Referrer />
           </Grid> */}
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Locale />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Hardware />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
+          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Session />
           </Grid>
         </Grid>

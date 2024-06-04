@@ -67,23 +67,34 @@ function BrowserCapabilities() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Browser Capabilities
       </Typography>
-      <Typography>User Agent: {browserCapabilities.userAgent}</Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
+        User Agent: {browserCapabilities.userAgent}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
         Cookies Enabled: {browserCapabilities.cookiesEnabled ? "Yes" : "No"}
       </Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
         JavaScript Enabled:{" "}
         {browserCapabilities.javascriptEnabled ? "Yes" : "No"}
       </Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
         WebRTC Support: {browserCapabilities.webRTC ? "Yes" : "No"}
       </Typography>
-      <Typography>WebGL Renderer: {browserCapabilities.webGL}</Typography>
-      <Typography>Do Not Track: {browserCapabilities.doNotTrack}</Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
+        WebGL Renderer: {browserCapabilities.webGL}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        Do Not Track: {browserCapabilities.doNotTrack}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
         MIME Types: {browserCapabilities.mimeTypes.join(", ")}
       </Typography>
     </Box>

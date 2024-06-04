@@ -38,13 +38,22 @@ function Network() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Network
       </Typography>
-      <Typography>Network Type: {network.effectiveType}</Typography>
-      <Typography>Downlink Speed: {network.downlink} Mbps</Typography>
-      <Typography>Round-Trip Time: {network.rtt} ms</Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
+        Network Type: {network.effectiveType}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        Downlink Speed: {network.downlink} Mbps
+      </Typography>
+      <Typography sx={{ pb: 1 }}>Round-Trip Time: {network.rtt} ms</Typography>
+      <Typography sx={{ pb: 1 }}>
         Data Saver Mode: {network.saveData ? "Enabled" : "Disabled"}
       </Typography>
     </Box>

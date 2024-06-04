@@ -36,19 +36,24 @@ function Session() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Session
       </Typography>
-      <Typography>User Agent: {session.userAgent}</Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>User Agent: {session.userAgent}</Typography>
+      <Typography sx={{ pb: 1 }}>
         First Visit Time:{" "}
         {new Date(session.firstVisitTime || "").toLocaleString()}
       </Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
         Last Visit Time:{" "}
         {new Date(session.lastVisitTime || "").toLocaleString()}
       </Typography>
-      <Typography>Visit Count: {session.visitCount}</Typography>
+      <Typography sx={{ pb: 1 }}>Visit Count: {session.visitCount}</Typography>
     </Box>
   );
 }

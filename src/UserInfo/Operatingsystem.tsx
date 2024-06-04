@@ -48,12 +48,21 @@ function OperatingSystem() {
 
   return (
     <Box>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Operating System
       </Typography>
-      <Typography>Operating System: {operatingSystem.name}</Typography>
-      <Typography>Version: {operatingSystem.version}</Typography>
-      <Typography>Architecture: {operatingSystem.architecture}</Typography>
+      <Typography sx={{ pb: 1 }}>
+        Operating System: {operatingSystem.name}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>Version: {operatingSystem.version}</Typography>
+      <Typography sx={{ pb: 1 }}>
+        Architecture: {operatingSystem.architecture}
+      </Typography>
     </Box>
   );
 }

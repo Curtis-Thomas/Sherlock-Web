@@ -46,12 +46,17 @@ function Hardware() {
 
   return (
     <>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Hardware
       </Typography>
-      <Typography>CPU Cores: {hardware.cores}</Typography>
-      <Typography>RAM: {hardware.ram}</Typography>
-      <Typography>GPU: {hardware.gpu}</Typography>
+      <Typography sx={{ pb: 1 }}>CPU Cores: {hardware.cores}</Typography>
+      <Typography sx={{ pb: 1 }}>RAM: {hardware.ram}</Typography>
+      <Typography sx={{ pb: 1 }}>GPU: {hardware.gpu}</Typography>
     </>
   );
 }

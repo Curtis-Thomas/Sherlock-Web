@@ -39,15 +39,22 @@ function Locale() {
 
   return (
     <div>
-      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+      <Typography
+        textAlign={"center"}
+        sx={{ pb: 2 }}
+        variant="h5"
+        color={"#75A4FF"}
+      >
         Locale
       </Typography>
-      <Typography>Primary Language: {locale.language}</Typography>
-      <Typography>
+      <Typography sx={{ pb: 1 }}>
+        Primary Language: {locale.language}
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
         Preferred Languages: {locale.preferredLanguages.join(", ")}
       </Typography>
-      <Typography>Time Zone: {locale.timeZone}</Typography>
-      <Typography>Date Format: {locale.dateFormat}</Typography>
+      <Typography sx={{ pb: 1 }}>Time Zone: {locale.timeZone}</Typography>
+      <Typography sx={{ pb: 1 }}>Date Format: {locale.dateFormat}</Typography>
     </div>
   );
 }
