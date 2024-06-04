@@ -6,7 +6,7 @@ import BrowserCapabilities from "./UserInfo/BrowserCapabilities";
 // import Referrer from "./UserInfo/Referrer";
 import Locale from "./UserInfo/Locale";
 import Hardware from "./UserInfo/Hardware";
-import Session from "./UserInfo/Session";
+import Storage from "./UserInfo/Storage";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         </Typography>
       </Box>
       <Box sx={{ pb: 5 }}>
-        <Box>
+        <Box sx={{ pt: 1, pb: 1 }}>
           <Typography variant="h5" sx={{ textAlign: "center" }}>
             A simple web application that provides information about the user's
             device, operating system, network, browser capabilities, locale,
@@ -55,23 +55,34 @@ function App() {
           <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <OperatingSystem />
           </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            sx={{ border: "dashed 1px #75A4FF", p: 1 }}
+          >
+            <BrowserCapabilities />
+          </Grid>
           <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Network />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
-            <BrowserCapabilities />
-          </Grid>
+
           {/* <Grid item xs={12} sm={6} >
             <Referrer />
           </Grid> */}
           <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
             <Locale />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
-            <Hardware />
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            sx={{ border: "dashed 1px #75A4FF", p: 1 }}
+          >
+            <Storage />
           </Grid>
           <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
-            <Session />
+            <Hardware />
           </Grid>
         </Grid>
       </Box>
