@@ -67,6 +67,9 @@ function BrowserCapabilities() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Browser Capabilities
+      </Typography>
       <Typography>User Agent: {browserCapabilities.userAgent}</Typography>
       <Typography>
         Cookies Enabled: {browserCapabilities.cookiesEnabled ? "Yes" : "No"}

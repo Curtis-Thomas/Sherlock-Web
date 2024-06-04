@@ -10,7 +10,15 @@ import Session from "./UserInfo/Session";
 
 function App() {
   return (
-    <Box sx={{ color: "white", backgroundColor: "black", minHeight: "100vh" }}>
+    <Box
+      sx={{
+        color: "white",
+        backgroundColor: "black",
+        minHeight: "100vh",
+        pl: { xs: 0, md: "30vw" },
+        pr: { xs: 0, md: "30vw" },
+      }}
+    >
       <Box
         sx={{
           height: "20%",
@@ -23,30 +31,39 @@ function App() {
       >
         <Typography variant="h1">Sherlock Web</Typography>
       </Box>
+      <Box sx={{ pb: 5 }}>
+        <Box>
+          <Typography variant="h5" sx={{ textAlign: "center" }}>
+            A simple web application that provides information about the user's
+            device, operating system, network, browser capabilities, locale,
+            hardware, and session.
+          </Typography>
+        </Box>
+      </Box>
       <Box>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <Device />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <OperatingSystem />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <Network />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <BrowserCapabilities />
           </Grid>
-          {/* <Grid item xs={12} sm={6}>
+          {/* <Grid item xs={12} sm={6} >
             <Referrer />
           </Grid> */}
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <Locale />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <Hardware />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ border: "solid 1px white", p: 1 }}>
             <Session />
           </Grid>
         </Grid>

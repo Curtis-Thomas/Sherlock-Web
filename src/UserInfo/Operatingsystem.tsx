@@ -48,6 +48,9 @@ function OperatingSystem() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Operating System
+      </Typography>
       <Typography>Operating System: {operatingSystem.name}</Typography>
       <Typography>Version: {operatingSystem.version}</Typography>
       <Typography>Architecture: {operatingSystem.architecture}</Typography>

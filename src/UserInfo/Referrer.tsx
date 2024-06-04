@@ -24,6 +24,9 @@ function Referrer() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Referrer
+      </Typography>
       <Typography>Referrer URL: {referrerInfo.referrer}</Typography>
       <Typography>Referrer Hostname: {referrerInfo.hostname}</Typography>
       <Typography>Referrer Protocol: {referrerInfo.protocol}</Typography>

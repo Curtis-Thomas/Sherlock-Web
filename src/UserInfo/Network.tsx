@@ -38,6 +38,9 @@ function Network() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Network
+      </Typography>
       <Typography>Network Type: {network.effectiveType}</Typography>
       <Typography>Downlink Speed: {network.downlink} Mbps</Typography>
       <Typography>Round-Trip Time: {network.rtt} ms</Typography>

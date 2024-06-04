@@ -45,6 +45,9 @@ function Device() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Device
+      </Typography>
       <Typography>
         Screen Resolution: {device.screenWidth}x{device.screenHeight}
       </Typography>

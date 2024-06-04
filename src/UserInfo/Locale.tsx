@@ -39,6 +39,9 @@ function Locale() {
 
   return (
     <div>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Locale
+      </Typography>
       <Typography>Primary Language: {locale.language}</Typography>
       <Typography>
         Preferred Languages: {locale.preferredLanguages.join(", ")}

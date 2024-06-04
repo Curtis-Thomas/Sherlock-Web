@@ -36,6 +36,9 @@ function Session() {
 
   return (
     <Box>
+      <Typography textAlign={"center"} sx={{ pb: 1 }} variant="h5">
+        Session
+      </Typography>
       <Typography>User Agent: {session.userAgent}</Typography>
       <Typography>
         First Visit Time:{" "}
