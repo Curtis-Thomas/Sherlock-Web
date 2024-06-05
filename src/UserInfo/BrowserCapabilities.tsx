@@ -75,28 +75,87 @@ function BrowserCapabilities() {
       >
         Browser Capabilities
       </Typography>
-      <Typography sx={{ pb: 1 }}>
-        User Agent: {browserCapabilities.userAgent}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Cookies Enabled: {browserCapabilities.cookiesEnabled ? "Yes" : "No"}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        JavaScript Enabled:{" "}
-        {browserCapabilities.javascriptEnabled ? "Yes" : "No"}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        WebRTC Support: {browserCapabilities.webRTC ? "Yes" : "No"}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        WebGL Renderer: {browserCapabilities.webGL}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Do Not Track: {browserCapabilities.doNotTrack}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        MIME Types: {browserCapabilities.mimeTypes.join(", ")}
-      </Typography>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            User Agent:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{browserCapabilities.userAgent}</Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Cookies Enabled:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>
+            {browserCapabilities.cookiesEnabled ? "Yes" : "No"}
+          </Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            JavaScript Enabled:{" "}
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>
+            {browserCapabilities.javascriptEnabled ? "Yes" : "No"}
+          </Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            WebRTC Support:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{browserCapabilities.webRTC ? "Yes" : "No"}</Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            WebGL Renderer:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{browserCapabilities.webGL}</Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Do Not Track:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{browserCapabilities.doNotTrack}</Typography>
+        </Box>
+      </Box>
+
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            MIME Types:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{browserCapabilities.mimeTypes.join(", ")}</Typography>
+        </Box>
+      </Box>
     </Box>
   );
 }

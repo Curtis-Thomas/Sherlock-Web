@@ -53,15 +53,59 @@ function Device() {
       >
         Device
       </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Screen Resolution: {device.screenWidth}x{device.screenHeight}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Color Depth: {device.colorDepth} bits
-      </Typography>
-      <Typography sx={{ pb: 1 }}>Pixel Ratio: {device.pixelRatio}x</Typography>
-      <Typography sx={{ pb: 1 }}>Device Type: {device.deviceType}</Typography>
-      <Typography sx={{ pb: 1 }}>Orientation: {device.orientation}</Typography>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Screen Resolution:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>
+            {" "}
+            {device.screenWidth}x{device.screenHeight}
+          </Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Color Depth:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{device.colorDepth} bits</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Pixel Ratio:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{device.pixelRatio}x</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Device Type:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{device.deviceType}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Orientation:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{device.orientation}</Typography>
+        </Box>
+      </Box>
     </Box>
   );
 }

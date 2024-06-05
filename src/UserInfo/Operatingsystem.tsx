@@ -56,13 +56,36 @@ function OperatingSystem() {
       >
         Operating System
       </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Operating System: {operatingSystem.name}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>Version: {operatingSystem.version}</Typography>
-      <Typography sx={{ pb: 1 }}>
-        Architecture: {operatingSystem.architecture}
-      </Typography>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Operating System:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{operatingSystem.name}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Version:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{operatingSystem.version}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Architecture:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{operatingSystem.architecture}</Typography>
+        </Box>
+      </Box>
     </Box>
   );
 }

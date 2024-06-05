@@ -46,16 +46,46 @@ function Network() {
       >
         Network
       </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Network Type: {network.effectiveType}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Downlink Speed: {network.downlink} Mbps
-      </Typography>
-      <Typography sx={{ pb: 1 }}>Round-Trip Time: {network.rtt} ms</Typography>
-      <Typography sx={{ pb: 1 }}>
-        Data Saver Mode: {network.saveData ? "Enabled" : "Disabled"}
-      </Typography>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Network Type:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{network.effectiveType}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Downlink Speed:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{network.downlink} Mbps</Typography>
+        </Box>
+      </Box>{" "}
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Round-Trip Time:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{network.rtt} ms</Typography>
+        </Box>
+      </Box>{" "}
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Data Saver Mode:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{network.saveData ? "Enabled" : "Disabled"}</Typography>
+        </Box>
+      </Box>
     </Box>
   );
 }

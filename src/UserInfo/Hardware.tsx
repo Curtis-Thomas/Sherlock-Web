@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 
 declare global {
@@ -54,9 +54,32 @@ function Hardware() {
       >
         Hardware
       </Typography>
-      <Typography sx={{ pb: 1 }}>CPU Cores: {hardware.cores}</Typography>
-      <Typography sx={{ pb: 1 }}>RAM: {hardware.ram}</Typography>
-      <Typography sx={{ pb: 1 }}>GPU: {hardware.gpu}</Typography>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            CPU Cores:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{hardware.cores}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>RAM:</Typography>
+        </Box>
+        <Box>
+          <Typography>{hardware.ram}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>GPU:</Typography>
+        </Box>
+        <Box>
+          <Typography>{hardware.gpu}</Typography>
+        </Box>
+      </Box>
     </>
   );
 }

@@ -65,22 +65,43 @@ function Storage() {
       >
         Storage
       </Typography>
+
       <Typography sx={{ pb: 1 }}>Cookies:</Typography>
+
       {Object.entries(cookies).map(([key, value]) => (
-        <Typography key={key} sx={{ pb: 1 }}>
-          {key} ({getType(value)}): {String(value)}
+        <Typography
+          key={key}
+          sx={{ pb: 1, wordWrap: "break-word", overflowWrap: "break-word" }}
+        >
+          <span style={{ color: "#75A4FF" }}>
+            ({key} {getType(value)})
+          </span>
+          : {String(value)}
         </Typography>
       ))}
       <Typography sx={{ pb: 1, pt: 1 }}>Local Storage:</Typography>
       {Object.entries(localStorageData).map(([key, value]) => (
-        <Typography key={key} sx={{ pb: 1 }}>
-          {key} ({getType(value)}): {JSON.stringify(value, null, 2)}
+        <Typography
+          key={key}
+          sx={{ pb: 1, wordWrap: "break-word", overflowWrap: "break-word" }}
+        >
+          <span style={{ color: "#75A4FF" }}>
+            {" "}
+            {key} ({getType(value)})
+          </span>
+          : {JSON.stringify(value, null, 2)}
         </Typography>
       ))}
       <Typography sx={{ pb: 1, pt: 1 }}>Session Storage:</Typography>
       {Object.entries(sessionStorageData).map(([key, value]) => (
-        <Typography key={key} sx={{ pb: 1 }}>
-          {key} ({getType(value)}): {JSON.stringify(value, null, 2)}
+        <Typography
+          key={key}
+          sx={{ pb: 1, wordWrap: "break-word", overflowWrap: "break-word" }}
+        >
+          <span style={{ color: "#75A4FF" }}>
+            {key} ({getType(value)})
+          </span>
+          : {JSON.stringify(value, null, 2)}
         </Typography>
       ))}
     </>

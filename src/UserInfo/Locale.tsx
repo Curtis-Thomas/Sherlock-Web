@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 
 interface LocaleState {
@@ -47,14 +47,46 @@ function Locale() {
       >
         Locale
       </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Primary Language: {locale.language}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>
-        Preferred Languages: {locale.preferredLanguages.join(", ")}
-      </Typography>
-      <Typography sx={{ pb: 1 }}>Time Zone: {locale.timeZone}</Typography>
-      <Typography sx={{ pb: 1 }}>Date Format: {locale.dateFormat}</Typography>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Primary Language:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{locale.language}</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Preferred Languages:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{locale.preferredLanguages.join(", ")}</Typography>
+        </Box>
+      </Box>{" "}
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Time Zone:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{locale.timeZone}</Typography>
+        </Box>
+      </Box>{" "}
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <Typography sx={{ pb: 1, pr: 1, color: " #75A4FF" }}>
+            Date Format:
+          </Typography>
+        </Box>
+        <Box>
+          <Typography>{locale.dateFormat}</Typography>
+        </Box>
+      </Box>
     </div>
   );
 }

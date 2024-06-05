@@ -48,13 +48,13 @@ function App() {
         </Box>
       </Box>
       <Box>
-        <Grid container spacing={3}>
+        <Grid container spacing={{ xs: 0, md: 3 }}>
           <Grid
             item
             xs={12}
             sm={6}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -66,7 +66,7 @@ function App() {
             xs={12}
             sm={6}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -78,7 +78,7 @@ function App() {
             xs={12}
             sm={12}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -90,7 +90,7 @@ function App() {
             xs={12}
             sm={6}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -106,7 +106,7 @@ function App() {
             xs={12}
             sm={6}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -118,7 +118,7 @@ function App() {
             xs={12}
             sm={12}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
@@ -130,7 +130,7 @@ function App() {
             xs={12}
             sm={6}
             sx={{
-              p: 1,
+              p: { xs: 3, md: 1 },
               backgroundColor: "rgba(0, 68, 204, 0.05)",
               boxShadow: " inset 0 0 5px #70A0FF",
             }}
