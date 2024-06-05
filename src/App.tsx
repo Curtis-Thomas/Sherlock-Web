@@ -49,39 +49,92 @@ function App() {
       </Box>
       <Box>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
+          >
             <Device />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
+          >
             <OperatingSystem />
           </Grid>
           <Grid
             item
             xs={12}
             sm={12}
-            sx={{ border: "dashed 1px #75A4FF", p: 1 }}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
           >
             <BrowserCapabilities />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
+          >
             <Network />
           </Grid>
 
           {/* <Grid item xs={12} sm={6} >
             <Referrer />
           </Grid> */}
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
+          >
             <Locale />
           </Grid>
           <Grid
             item
             xs={12}
             sm={12}
-            sx={{ border: "dashed 1px #75A4FF", p: 1 }}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
           >
             <Storage />
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ border: "dashed 1px #75A4FF", p: 1 }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              p: 1,
+              backgroundColor: "rgba(0, 68, 204, 0.05)",
+              boxShadow: " inset 0 0 5px #70A0FF",
+            }}
+          >
             <Hardware />
           </Grid>
         </Grid>
